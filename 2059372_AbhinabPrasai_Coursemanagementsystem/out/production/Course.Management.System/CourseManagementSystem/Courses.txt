@@ -1,0 +1,6 @@
+BBA,4,
+BIT,3,
+BSCIT,4,
+BSc,4,
+MIT,2,
+MIT,2,
