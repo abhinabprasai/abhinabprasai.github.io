@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+.sidebar-wrapper {
+  width: 15%;
+  max-width: 15%;
+  background: #2663a7;
+  border-radius: 0px 20px 20px 0px;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a img {
+  vertical-align: bottom;
+}
+
+a sup {
+  font-size: 15px;
+  padding: 0 0 0 0.75rem;
+}
+
+a:hover {
+  background-color: #214b7a;
+}
+
+a:active {
+  transform: scale(0.95);
+  transition: all ease-in-out 0.23s;
+}
+
+.dashboard-logo {
+  height: 65px;
+  padding: 5rem 0 0 5rem;
+}
+
+.dashboard-logo img {
+  position: absolute;
+  left: 4rem;
+  top: 5.6rem;
+}
+
+.dashboard-logo h2 {
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+
+.dashboard-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 78%;
+}
+
+.links {
+  text-align: left;
+  padding: 3rem 0 0 0;
+}
+
+.links a {
+  padding: 0.5rem 0;
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.links a img {
+  padding-left: 4rem;
+}
+
+.logout {
+  height: 30px;
+  background-color: transparent;
+  padding: 0.5rem;
+}

@@ -1,0 +1,139 @@
+:root {
+  --background-color: #e5f3ff;
+}
+
+body {
+  margin: 0;
+}
+
+.login-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+
+.login-image {
+  background-color: var(--background-color);
+}
+
+.login-image img {
+  margin: 0 0 0 5.5rem;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form {
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem 4rem;
+  border: 1px solid rgba(211, 211, 211, 0.2);
+  margin-left: -3rem;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  top: 7rem;
+  left: 2rem;
+}
+
+.title {
+  color: #2e2e2e;
+  font-weight: 800;
+  font-size: 44px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: -1rem;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+input {
+  margin: 0 0 1rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+  color: #a3a0a1;
+  width: 459px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+input:focus {
+  border-radius: 6px;
+  outline-color: #9cb4ce;
+}
+
+button {
+  background-color: #f4f4f5;
+  padding: 0.5rem;
+  border: none;
+  width: 320px;
+  height: 40px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  display: block;
+  margin: 2rem auto;
+}
+
+button:hover {
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #2663a7;
+  color: white;
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: all ease-out 0.23s;
+}
+
+h3 {
+  color: #363434;
+  text-align: center;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+select {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0 0.25rem 0.5rem;
+  background-color: white;
+  border: 1px solid #f4f4f5;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+select option {
+  margin: 0.25rem;
+}
+
+.forgot-password {
+  display: inline-block;
+  text-align: right;
+  font-size: 14px;
+  margin-left: 13rem;
+  text-decoration: underline;
+}
+
+.hide-eye {
+  position: absolute;
+  left: 30rem;
+  bottom: 14.3rem;
+}

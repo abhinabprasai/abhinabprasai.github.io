@@ -1,0 +1,29 @@
+.dashboard-wrapper {
+  width: 85%;
+  margin: 0 0 0 auto;
+}
+
+.dashboard-wrapper .header-section {
+  height: 10vh;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.body-section {
+  background-color: #faf9ff;
+  padding: 3rem;
+  height: 78vh;
+}
+
+.body-section h2 {
+  font-size: 26px;
+}
+
+.body-section p {
+  margin-top: -1rem;
+}
+
+.profile {
+  text-align: right;
+  padding: 2rem 2rem 0 0;
+}

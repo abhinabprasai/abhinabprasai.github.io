@@ -1,0 +1,372 @@
+:root {
+  --background-color: #faf9ff;
+}
+
+.container {
+  display: flex;
+}
+
+button {
+  background-color: #2663a7;
+  width: 320px;
+  height: 62px;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #214b7a;
+  border-radius: 10px;
+  color: lightgrey;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: all 0.23s ease-in-out;
+}
+
+.add-button {
+  width: 160px;
+  height: 34px;
+  font-weight: 500;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: -4rem 0 3rem 0;
+}
+
+.search-bar input {
+  height: 32px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  padding: 1rem;
+}
+
+.search-bar input:focus{
+  outline: 1px solid #9cb4ce;
+  border: none;
+}
+
+.search-button {
+  width: 38px !important;
+  height: 32px;
+  position: relative;
+  top: 5px;
+  background-color: #dbdbdb;
+  border: none;
+  border-radius: 6px;
+}
+
+.search-button:hover {
+  background-color: var(--background-color);
+}
+
+.search-role {
+  height: 30px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.display-block-center {
+  display: block;
+  margin: 1rem auto;
+}
+
+.scan-fingerprint {
+  margin: 5rem 0 0 0;
+  text-align: center;
+  color: #353535;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  background: var(--background-color);
+  padding: 1rem 0 0.75rem 0.5rem;
+  width: 11%;
+  z-index: 2;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* First Responder */
+
+.scan-fingerprint h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.scan-fingerprint p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7e7e7e;
+}
+
+.scan-fingerprint img {
+  margin: 3rem 0 3rem 0;
+}
+
+.patient-form {
+  display: flex;
+  width: 70%;
+  height: 600px;
+  background-color: white;
+  color: #a3a0a1;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.patient-form form input, textarea {
+  margin-bottom: 2rem;
+}
+
+.patient-form form input {
+  display: block;
+  margin: 1rem auto;
+  width: 459px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #f4f4f5;
+  padding-left: 1rem;
+  color: #a3a0a1;
+}
+
+.patient-form form input:focus {
+  outline: 2px solid #9cb4ce;
+  border: none;
+}
+
+.patient-form form button {
+  width: 100%;
+}
+
+.view-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  background-color: white;
+}
+
+.patient-details {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.details {
+  position: fixed;
+  top: 19rem;
+  left: 38rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .view-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sidebar-wrapper {
+    height: 136vh !important;
+  }
+
+  .dashboard-logo img{
+    left: 1.2rem;
+  }
+
+  .links a img {
+    padding-left: 2rem;
+  }
+
+  .dashboard-cta .links a sup, .dashboard-cta a sup, .dashboard-logo h2 {
+    display: none;
+  }
+
+  .patient-details div .details {
+    left: 22rem;
+  }
+}
+
+/* Receptionist */
+
+.register-details {
+  padding-top: 1rem;
+  width: 547px;
+  height: 745px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.register-details h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.register-details form input {
+  display: block;
+  margin: 1rem auto;
+  width: 459px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #f4f4f5;
+  padding-left: 1rem;
+  color: #a3a0a1;
+}
+
+.register-details form input:focus {
+  outline: 2px solid #9cb4ce;
+  border: none;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 459px;
+  height: 50px;
+  align-items: center;
+  margin: 1rem auto;
+  gap: 20px;
+}
+
+.two-columns select {
+  height: 50px;
+  border-radius: 6px;
+  background-color: white;
+  width: 135px;
+  padding: 0 2rem 0 2rem;
+}
+
+.image-upload {
+  padding: 0.75rem;
+  width: 241px !important;
+  margin: 0 2.6rem !important;
+}
+
+/* .image-upload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.image-upload::before {
+  content: "Add Photo (Optional) +";
+  cursor: pointer;
+} */
+
+.fingerprint-registering {
+  background-color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 450px;
+  margin: 3rem auto;
+  color: #a3a0a1;
+  height: 500px;
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.list-wrapper {
+  width: 1044px;
+  height: 492px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 6rem auto;
+  overflow: hidden;
+}
+
+.list {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.list-item {
+  height: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #989898;
+  position: relative;
+}
+
+.list-start-animation {
+  position: relative;
+  animation: listloop 5s linear infinite;
+  padding: 1rem;
+  scroll-behavior: smooth;
+}
+
+.list-start-animation:hover {
+  animation-play-state: paused;
+}
+
+.dropdown-form button[type='submit']{
+  width: 93%;
+  height: 2rem;
+  font-size: 15px;
+}
+
+@keyframes listloop {
+  from {bottom: 0%;}
+  to {bottom: 100%;}
+}
+
+/* Admin */
+.add-user {
+  background-color: white;
+  width: 40%;
+  height: 70%;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.add-user form input {
+  display: block;
+  margin: 1rem auto;
+  width: 459px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #f4f4f5;
+  padding-left: 1rem;
+  color: #a3a0a1;
+}
+
+.add-user select {
+  height: 50px;
+  border-radius: 6px;
+  background-color: white;
+  width: 180px;
+  padding: 0 2rem 0 2rem;
+}
+
+.add-user .add-button {
+  width: 100%;
+  height: 10%;
+}
